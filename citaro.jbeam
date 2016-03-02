@@ -21,7 +21,7 @@
   "beams": [   
         ["id1:", "id2:"], 
         {"beamSpring":2000000,"beamDamp":200},
-        {"beamDeform":80000,"beamStrength":"800000"},
+        {"beamDeform":80000,"beamStrength":800000},
 		
     ],
 }
