@@ -1,0 +1,1 @@
+%vehiculeName = "Citaro";

@@ -1,0 +1,28 @@
+{"citaro":
+ 
+{
+    "information":{
+        "authors":"dave180sx, johnville",
+        "name":"Citaro",
+    }
+     
+    "slotType" : "main",
+     
+    "nodes": [       
+        ["id", "posX", "posY", "posZ"],
+        {"nodeWeight":10},
+        {"frictionCoef":0.7},
+        {"nodeMaterial":"|NM_METAL"},
+        {"collision":true}
+        {"selfCollision":true}
+		
+    ],
+ 
+  "beams": [   
+        ["id1:", "id2:"], 
+        {"beamSpring":2000000,"beamDamp":200},
+        {"beamDeform":80000,"beamStrength":"800000"},
+		
+    ],
+}
+}
