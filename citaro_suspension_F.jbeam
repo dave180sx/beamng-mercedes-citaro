@@ -14,8 +14,8 @@
 		{"hubRadius":0.2858},
 		{"tireWidth":0.275},
 		{"hubWidth":0.275}
-		{"wheelOffset":1.5}
-		["FL", "wheel_FL", "nr160", "nl154", 9999,  "nl188", -1,  {"speedo" : false, "torqueArm":"nl188"}],
+		{"wheelOffset":0}
+		["FL", "wheel_FL", "nl158", "nl160", 9999,  "nl160", -1,  {"speedo" : false, "torqueArm":"nl150"}],
 	],
 }
-}
+}q

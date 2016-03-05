@@ -7,7 +7,7 @@
     "slotType" : "main",
     "slots": [
         ["type", "default", "description"]
-        //["citaro_suspension_F","citaro_suspension_F", "Front Suspension",{"nodeOffset":""}],
+        ["citaro_suspension_F","citaro_suspension_F", "Front Suspension",{"nodeOffset":""}],
     ],
 	
     "nodes": [       
