@@ -1,23 +1,23 @@
 {
-"citaro_suspension_F": {
+"citaro_suspension_R": {
     "information":{
         "authors":"dave180sx, johnville",
-        "name":"Front suspension",
+        "name":"Rear Suspension",
     }
-    "slotType" : "citaro_suspension_F",
+    "slotType" : "citaro_suspension_R",
 	"slots": [
         ["type", "default", "description"]
-        ["citaro_wheeldata_F","citaro_wheeldata_F", "Front Wheels",{"nodeOffset":""}],
-		["citaro_axle_zfrl75a_F","citaro_axle_zfrl75a_F", "Front Axle (ZF RL75A)",{"nodeOffset":""}],
+        ["citaro_wheeldata_R","citaro_wheeldata_R", "Rear Wheels",{"nodeOffset":""}],
+		["citaro_axle_zfav132_R","citaro_axle_zfav132_R", "Rear Axle (ZF AV132)",{"nodeOffset":""}],
 	],
 },
 
-"citaro_wheeldata_F": {
+"citaro_wheeldata_R": {
     "information":{
         "authors":"dave180sx, johnville",
-        "name":"Front wheels",
+        "name":"Rear wheels",
     }
-    "slotType" : "citaro_wheeldata_F",
+    "slotType" : "citaro_wheeldata_R",
 	
 	"pressureWheels": [
 		["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
@@ -64,24 +64,24 @@
 		{"maxPressurePSI":2000},
 		{"dragCoef":20},
 		
-		// Front
+		// Rear
 		{"selfCollision":false},
 		{"collision":true},
 		{"triangleCollision":false},
 		{"enableHubcaps":false},
-		["FL", "wheel_FL", "tire_FL", "nl158", "nl160", 9999,  "nl160", -1,  {"speedo" : false, "torqueArm":"nl150"}],
+		["RL", "wheel_FL", "tire_FL", "nl158", "nl160", 9999,  "nl160", -1,  {"speedo" : false, "torqueArm":"nl150"}],
 		{"enableTireLbeams":false},
 		{"enableTreadReinfBeams":false},
 		{"propulsed":0},
 	],
 },
 
-"citaro_axle_zfrl75a_F": {
+"citaro_axle_zfav132_R": {
     "information":{
         "authors":"dave180sx, johnville",
-        "name":"Front Axle (ZF RL75A)",
+        "name":"Front axle ZF RL75A",
     }
-    "slotType" : "citaro_axle_zfrl75a_F",
+    "slotType" : "citaro_axle_zfav132_R",
 	
 	"nodes": [       
         ["id", "posX", "posY", "posZ"],

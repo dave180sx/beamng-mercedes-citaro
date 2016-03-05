@@ -8,12 +8,13 @@
     "slots": [
         ["type", "default", "description"]
         ["citaro_suspension_F","citaro_suspension_F", "Front Suspension",{"nodeOffset":""}],
+		//["citaro_suspension_R","citaro_suspension_R", "Rear Suspension",{"nodeOffset":""}],
     ],
 	
     "nodes": [       
         ["id", "posX", "posY", "posZ"],
         {"nodeWeight":10},
-        {"frictionCoef":0.7},
+        {"frictionCoef":0.5},
         {"nodeMaterial":"|NM_METAL"},
         {"collision":true},
         {"selfCollision":false},
