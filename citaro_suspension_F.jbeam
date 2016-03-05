@@ -5,17 +5,72 @@
         "name":"Front suspension",
     }
     "slotType" : "citaro_suspension_F",
+	"slots": [
+        ["type", "default", "description"]
+        ["citaro_wheeldata_F","citaro_wheeldata_F", "Front Wheels",{"nodeOffset":""}],
+	],
+},
+"citaro_wheeldata_F": {
+    "information":{
+        "authors":"dave180sx, johnville",
+        "name":"Front wheels",
+    }
+    "slotType" : "citaro_wheeldata_F",
+	
 	"pressureWheels": [
-		["name","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
-		{"selfCollision":false}
-		{"collision":true}
+		["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+		{"enableTireReinfBeams":true},
+		{"enableTireSideReinfBeams":true},
+		{"radius":0.478},
+		{"hubRadius":0.286},
+		{"tireWidth":0.285},
+		{"hubWidth":0.275},
+		{"wheelOffset":0},
 		{"numRays":16},
-		{"radius":0.9565},
-		{"hubRadius":0.2858},
-		{"tireWidth":0.275},
-		{"hubWidth":0.275}
-		{"wheelOffset":0}
-		["FL", "wheel_FL", "nl158", "nl160", 9999,  "nl160", -1,  {"speedo" : false, "torqueArm":"nl150"}],
+		
+		{"hubTreadBeamSpring":2151000, "hubTreadBeamDamp":3},
+		{"hubPeripheryBeamSpring":2151000, "hubPeripheryBeamDamp":3},
+		{"hubSideBeamSpring":2151000, "hubSideBeamDamp":3},
+		{"hubBeamDeform":112000, "hubBeamStrength":154000},
+		{"hubNodeWeight":0.85},
+		{"hubNodeMaterial":"|NM_METAL"},
+		{"hubFrictionCoef":0.5},
+		
+		// Tire options
+		{"wheelSideBeamSpring":0,"wheelSideBeamDamp":15},
+		{"wheelSideBeamSpringExpansion":121000,"wheelSideBeamDampExpansion":20},
+		{"wheelSideReinfBeamSpring":0,"wheelSideReinfBeamDamp":15},
+		{"wheelSideReinfBeamSpringExpansion":391000,"wheelSideReinfBeamDampExpansion":20},
+		{"wheelReinfBeamSpring":21000,"wheelReinfBeamDamp":50},
+		{"wheelReinfBeamSpringExpansion":21000,"wheelReinfBeamDampExpansion":50},
+		{"wheelTreadBeamSpring":301000,"wheelTreadBeamDamp":40},
+		{"wheelTreadBeamSpringExpansion":301000,"wheelTreadBeamDampExpansion":40},
+		{"wheelPeripheryBeamSpring":391000,"wheelPeripheryBeamDamp":20},
+		
+		// Deform values
+		{"wheelSideBeamDeform":78000,"wheelSideBeamStrength":95000},
+		{"wheelSideReinfBeamDeform":78000,"wheelSideReinfBeamStrength":95000},
+		{"wheelReinfBeamDeform":78000,"wheelReinfBeamStrength":95000},
+		{"wheelTreadBeamDeform":78000,"wheelTreadBeamStrength":95000},
+		{"wheelPeripheryBeamDeform":78000,"wheelPeripheryBeamStrength":95000},
+		
+		// General tire values
+		{"nodeWeight":0.45},
+		{"nodeMaterial":"|NM_RUBBER"},
+		{"frictionCoef":1.22},
+		{"pressurePSI":30},
+		{"maxPressurePSI":2000},
+		{"dragCoef":20},
+		
+		// Front
+		{"selfCollision":false},
+		{"collision":true},
+		{"triangleCollision":false},
+		{"enableHubcaps":false},
+		["FL", "wheel_FL", "tire_FL", "nl158", "nl160", 9999,  "nl160", -1,  {"speedo" : false, "torqueArm":"nl150"}],
+		{"enableTireLbeams":false},
+		{"enableTreadReinfBeams":false},
+		{"propulsed":0},
 	],
 }
-}q
+}
