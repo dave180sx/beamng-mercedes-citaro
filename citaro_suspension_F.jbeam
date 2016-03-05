@@ -1,0 +1,21 @@
+{
+"citaro_suspension_F": {
+    "information":{
+        "authors":"dave180sx, johnville",
+        "name":"Front suspension",
+    }
+    "slotType" : "citaro_suspension_F",
+	"pressureWheels": [
+		["name","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+		{"selfCollision":false}
+		{"collision":true}
+		{"numRays":16},
+		{"radius":0.9565},
+		{"hubRadius":0.2858},
+		{"tireWidth":0.275},
+		{"hubWidth":0.275}
+		{"wheelOffset":1.5}
+		["FL", "wheel_FL", "nr160", "nl154", 9999,  "nl188", -1,  {"speedo" : false, "torqueArm":"nl188"}],
+	],
+}
+}
