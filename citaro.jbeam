@@ -7,8 +7,9 @@
     "slotType" : "main",
     "slots": [
         ["type", "default", "description"]
-        ["citaro_suspension_F","citaro_suspension_F", "Front Suspension",{"nodeOffset":""}],
-		//["citaro_suspension_R","citaro_suspension_R", "Rear Suspension",{"nodeOffset":""}],
+		["citaro_suspension_F","citaro_suspension_F", "Front Suspension",{"nodeOffset":""}],
+		["citaro_suspension_R","citaro_suspension_R", "Rear Suspension",{"nodeOffset":""}],
+		["citaro_mechanical","citaro_mechanical", "Mechnical",{"nodeOffset":""}],
     ],
 	
     "nodes": [       
@@ -159,10 +160,10 @@
 		["nl138",1.25,-3.505,0.545],
 		["nl139",0.45,-3.505,0.439],
 		["nl140",0.45,-3.505,0.652],
-		["nl141",0.45,-3.505,0.825],
+		["nl141",0.45,-3.505,0.892],
 		["nr142",-0.45,-3.505,0.439],
 		["nr143",-0.45,-3.505,0.652],
-		["nr144",-0.45,-3.505,0.825],
+		["nr144",-0.45,-3.505,0.892],
 		["nr145",-1.25,-3.505,0.545],
 		["nr146",-1.277,-3.505,0.652],
 		["nr147",-1.277,-3.505,1.104],
@@ -174,10 +175,10 @@
 		["nl153",1.052,-2.986,2.66],
 		["nl154",0.975,-2.986,2.979],
 		["nl155",0.65,-2.986,3.199],
-		["nl156",0.516,-2.986,1.41],
+		["nl156",0.576,-2.986,1.41],
 		["n157",0.0,-2.986,3.006],
 		["n158",0.0,-2.986,3.206],
-		["nr159",-0.516,-2.986,1.41],
+		["nr159",-0.576,-2.986,1.41],
 		["nr160",-0.65,-2.986,3.199],
 		["nr161",-0.975,-2.986,2.979],
 		["nr162",-1.052,-2.986,2.66],
@@ -572,7 +573,7 @@
  
   "beams": [   
         ["id1:", "id2:"], 
-        {"beamSpring":2000000,"beamDamp":200},
+        {"beamSpring":4000000,"beamDamp":400},
         {"beamDeform":80000,"beamStrength":800000},
 		["nr427","nr424"],
 		["nr424","nr430"],

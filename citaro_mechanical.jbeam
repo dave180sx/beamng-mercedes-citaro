@@ -1,0 +1,53 @@
+{
+"citaro_mechanical": {
+    "information":{
+        "authors":"dave180sx, johnville",
+        "name":"Mechanical",
+    }
+    "slotType" : "citaro_mechanical",
+	"slots": [
+        ["type", "default", "description"]
+        //["","", "Front Wheels",{"nodeOffset":""}],
+	],
+	
+	"enginetorque":[
+        ["rpm", "torque"] //Torque curve
+        [0, 0],
+        [250, 400],
+		[500, 600],
+        [1000, 995],
+        [1200, 1161],
+        [1400, 1217],
+        [1600, 1217],
+        [1800, 1217],
+        [2000, 1106],
+        [2200, 1014],
+        [2400, 921],
+    ],
+	
+    "engine":{
+        "idleRPM":500, //Idling RPM
+        "shiftDownRPM":1200, //Down shift, for automatic
+        "shiftUpRPM":2300, //Up shift, for automatic
+        "maxRPM":2400, //Max RPM for the engine, basically a redline. 
+        "inertia":6,
+        "friction":16
+        "brakingCoefRPS":9
+        "burnEfficiency":0.5
+        "throttleSensitivity":1.2
+         
+        //transmission section
+        "transmissionType":"automatic", //Automatic or manual, setting automatic will restrict the use of manual mode while playing.
+        "lowShiftDownRPM":500,
+        "lowShiftUpRPM":900,
+        "highShiftDownRPM":1400,
+        "highShiftUpRPM":2000,
+        // -1, 0 (neutral), 1, etc
+        "gears":[-10, 0, 6.6, 4, 3, 2] //Gear ratios
+        "clutchDuration":0.25
+        "viscousCoupling":50
+        "lockingTorqueLimit":1250
+        "enableLocking":true
+        },
+},
+}
