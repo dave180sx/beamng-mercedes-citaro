@@ -4,86 +4,11 @@
         "authors":"dave180sx, johnville",
         "name":"Front suspension",
     }
-    "slotType" : "citaro_suspension_F",
+    
+	"slotType" : "citaro_suspension_F",
 	"slots": [
         ["type", "default", "description"]
-        ["citaro_wheeldata_F","citaro_wheeldata_F", "Front Wheels",{"nodeOffset":""}],
-		["citaro_axle_zfrl75a_F","citaro_axle_zfrl75a_F", "Front Axle (ZF RL75A)",{"nodeOffset":""}],
-	],
-},
-
-"citaro_wheeldata_F": {
-    "information":{
-        "authors":"dave180sx, johnville",
-        "name":"Front wheels",
-    }
-    "slotType" : "citaro_wheeldata_F",
-	
-	"pressureWheels": [
-		["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
-		{"enableTireReinfBeams":true},
-		{"enableTireSideReinfBeams":true},
-		{"radius":0.478},
-		{"hubRadius":0.286},
-		{"tireWidth":0.275},
-		{"hubWidth":0.275},
-		{"wheelOffset":0.05},
-		{"numRays":20},
-		
-		{"hubTreadBeamSpring":2151000, "hubTreadBeamDamp":3},
-		{"hubPeripheryBeamSpring":2151000, "hubPeripheryBeamDamp":3},
-		{"hubSideBeamSpring":2151000, "hubSideBeamDamp":3},
-		{"hubBeamDeform":112000, "hubBeamStrength":154000},
-		{"hubNodeWeight":0.85},
-		{"hubNodeMaterial":"|NM_METAL"},
-		{"hubFrictionCoef":0.5},
-		
-		// Tire options
-		{"wheelSideBeamSpring":0,"wheelSideBeamDamp":15},
-		{"wheelSideBeamSpringExpansion":121000,"wheelSideBeamDampExpansion":20},
-		{"wheelSideReinfBeamSpring":0,"wheelSideReinfBeamDamp":15},
-		{"wheelSideReinfBeamSpringExpansion":391000,"wheelSideReinfBeamDampExpansion":20},
-		{"wheelReinfBeamSpring":21000,"wheelReinfBeamDamp":50},
-		{"wheelReinfBeamSpringExpansion":21000,"wheelReinfBeamDampExpansion":50},
-		{"wheelTreadBeamSpring":301000,"wheelTreadBeamDamp":40},
-		{"wheelTreadBeamSpringExpansion":301000,"wheelTreadBeamDampExpansion":40},
-		{"wheelPeripheryBeamSpring":391000,"wheelPeripheryBeamDamp":20},
-		
-		// Deform values
-		{"wheelSideBeamDeform":78000,"wheelSideBeamStrength":95000},
-		{"wheelSideReinfBeamDeform":78000,"wheelSideReinfBeamStrength":95000},
-		{"wheelReinfBeamDeform":78000,"wheelReinfBeamStrength":95000},
-		{"wheelTreadBeamDeform":78000,"wheelTreadBeamStrength":95000},
-		{"wheelPeripheryBeamDeform":78000,"wheelPeripheryBeamStrength":95000},
-		
-		// General tire values
-		{"nodeWeight":0.45},
-		{"nodeMaterial":"|NM_RUBBER"},
-		{"frictionCoef":1.22},
-		{"pressurePSI":75},
-		{"maxPressurePSI":2000},
-		{"dragCoef":20},
-		
-		// Front
-		{"selfCollision":false},
-		{"collision":true},
-		{"triangleCollision":false},
-		{"enableHubcaps":false},
-		{"propulsed":0},
-		["FL", "wheel_FL", "tire_FL", "af8", "af10", 9999,  "af32", -1,  {"speedo" : false, "torqueArm":"af32"}],
-		["FR", "wheel_FR", "tire_FR", "af25", "af23", 9999,  "af33", 1,  {"speedo" : false, "torqueArm":"af33"}],
-		{"enableTireLbeams":false},
-		{"enableTreadReinfBeams":false},
-		{"propulsed":0},
-		
-		// Brakes
-		{"enableABS":true},
-        {"ABSthreshold":1.1},
-        {"brakeTorque":7200},
-        {"brakeInputSplit":1},
-        {"brakeSplitCoef":1},
-        {"parkingTorque":0},
-        {"brakeSpring":75},
+		["citaro_axle_zfrl75a_F", "citaro_axle_zfrl75a_F", "Front Axle (ZF RL75A)",{"nodeOffset":""}],
 	],
 },
 
@@ -92,7 +17,12 @@
         "authors":"dave180sx, johnville",
         "name":"Front Axle (ZF RL75A)",
     }
-    "slotType" : "citaro_axle_zfrl75a_F",
+    
+	"slotType" : "citaro_axle_zfrl75a_F",
+	"slots": [
+        ["type", "default", "description"]
+        ["citaro_wheeldata_F", "citaro_wheeldata_F", "Front Wheels",{"nodeOffset":""}],
+	],
 	
 	"nodes": [       
         ["id", "posX", "posY", "posZ"],
@@ -122,14 +52,14 @@
 		["af30",-0.505,-2.882,0.501],
 		["af31",-0.532,-2.882,0.315],
 		
-		//Left knuckle
+		// Left knuckle
 		["af0",0.958,-3.135,0.601],
 		["af8",1.224,-3.002,0.601],
 		["af10",0.958,-3.002,0.601],
 		["af14",0.650,-3.002,0.471],
 		["af32",0.931,-2.603,0.421],
 		
-		//Right knuckle
+		// Right knuckle
 		["af1",-0.958,-3.135,0.601],
 		["af19",-0.692,-3.002,0.601],
 		["af23",-0.958,-3.002,0.601],
@@ -250,7 +180,7 @@
 		["af22","af28"],
 		["af22","af29"],
 		
-		//Left knuckle beams
+		// Left knuckle
 		{"beamSpring":20000000,"beamDamp":500},
         {"beamDeform":8000000,"beamStrength":"FLT_MAX"},
 		["af0","af8"],
@@ -272,7 +202,7 @@
 		["af32","af9"],
 		["af11","af32"],
 		
-		//Right knuckle beams
+		// Right knuckle
 		["af19","af1"],
 		["af23","af1"],
 		["af1","af25"],
@@ -291,7 +221,7 @@
 		["af33","af22"],
 		["af24","af33"],
 		
-		//Tie rod
+		// Tie rod
 		{"beamDeform":8000000,"beamStrength":2000000},
 		["af33","af32"],
 		
@@ -317,12 +247,14 @@
 		{"beamLimitSpring":351000,"beamLimitDamp":0},
 		["af18","nr159"],
 		["af15","nl156"],
+		
 		// Dampers
 		{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1.0, "beamShortBound":1.0},
 		{"beamSpring":0,"beamDamp":4500},
 		{"beamLimitSpring":0,"beamLimitDamp":0},
 		["af18","nr159",{"beamDampRebound":12300}],
 		["af15","nl156",{"beamDampRebound":12300}],
+		
 		// Bump stops
 		{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":0.25, "beamShortBound":0.20},
 		{"beamSpring":0,"beamDamp":0},
@@ -337,5 +269,81 @@
 		{"beamSpring":1000000,"beamDamp":1000},
 		["af14","nl96",{"factor":0.10,"steeringWheelLock":460,"lockDegrees":25}],		
     ]
+},
+
+"citaro_wheeldata_F": {
+    "information":{
+        "authors":"dave180sx, johnville",
+        "name":"Front Wheels",
+    }
+    
+	"slotType" : "citaro_wheeldata_F",
+	
+	"pressureWheels": [
+		["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+		{"enableTireReinfBeams":true},
+		{"enableTireSideReinfBeams":true},
+		{"radius":0.478},
+		{"hubRadius":0.286},
+		{"tireWidth":0.275},
+		{"hubWidth":0.275},
+		{"wheelOffset":0.05},
+		{"numRays":20},
+		
+		{"hubTreadBeamSpring":2151000, "hubTreadBeamDamp":3},
+		{"hubPeripheryBeamSpring":2151000, "hubPeripheryBeamDamp":3},
+		{"hubSideBeamSpring":2151000, "hubSideBeamDamp":3},
+		{"hubBeamDeform":112000, "hubBeamStrength":154000},
+		{"hubNodeWeight":0.85},
+		{"hubNodeMaterial":"|NM_METAL"},
+		{"hubFrictionCoef":0.5},
+		
+		// Tire options
+		{"wheelSideBeamSpring":0,"wheelSideBeamDamp":15},
+		{"wheelSideBeamSpringExpansion":121000,"wheelSideBeamDampExpansion":20},
+		{"wheelSideReinfBeamSpring":0,"wheelSideReinfBeamDamp":15},
+		{"wheelSideReinfBeamSpringExpansion":391000,"wheelSideReinfBeamDampExpansion":20},
+		{"wheelReinfBeamSpring":21000,"wheelReinfBeamDamp":50},
+		{"wheelReinfBeamSpringExpansion":21000,"wheelReinfBeamDampExpansion":50},
+		{"wheelTreadBeamSpring":301000,"wheelTreadBeamDamp":40},
+		{"wheelTreadBeamSpringExpansion":301000,"wheelTreadBeamDampExpansion":40},
+		{"wheelPeripheryBeamSpring":391000,"wheelPeripheryBeamDamp":20},
+		
+		// Deform values
+		{"wheelSideBeamDeform":78000,"wheelSideBeamStrength":95000},
+		{"wheelSideReinfBeamDeform":78000,"wheelSideReinfBeamStrength":95000},
+		{"wheelReinfBeamDeform":78000,"wheelReinfBeamStrength":95000},
+		{"wheelTreadBeamDeform":78000,"wheelTreadBeamStrength":95000},
+		{"wheelPeripheryBeamDeform":78000,"wheelPeripheryBeamStrength":95000},
+		
+		// General tire values
+		{"nodeWeight":0.45},
+		{"nodeMaterial":"|NM_RUBBER"},
+		{"frictionCoef":1.22},
+		{"pressurePSI":75},
+		{"maxPressurePSI":2000},
+		{"dragCoef":20},
+		
+		// Front
+		{"selfCollision":false},
+		{"collision":true},
+		{"triangleCollision":false},
+		{"enableHubcaps":false},
+		{"propulsed":0},
+		["FL", "wheel_FL", "tire_FL", "af8", "af10", 9999,  "af32", -1,  {"speedo" : false, "torqueArm":"af32"}],
+		["FR", "wheel_FR", "tire_FR", "af25", "af23", 9999,  "af33", 1,  {"speedo" : false, "torqueArm":"af33"}],
+		{"enableTireLbeams":false},
+		{"enableTreadReinfBeams":false},
+		{"propulsed":0},
+		
+		// Brakes
+		{"enableABS":true},
+        {"ABSthreshold":1.1},
+        {"brakeTorque":7200},
+        {"brakeInputSplit":1},
+        {"brakeSplitCoef":1},
+        {"parkingTorque":0},
+        {"brakeSpring":75},
+	],
 },
 }

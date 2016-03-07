@@ -4,12 +4,26 @@
         "authors":"dave180sx, johnville",
         "name":"Citaro",
     }
-    "slotType" : "main",
+    
+	"slotType" : "main",
     "slots": [
         ["type", "default", "description"]
-		["citaro_suspension_F","citaro_suspension_F", "Front Suspension",{"nodeOffset":""}],
-		["citaro_suspension_R","citaro_suspension_R", "Rear Suspension",{"nodeOffset":""}],
-		["citaro_mechanical","citaro_mechanical", "Mechnical",{"nodeOffset":""}],
+		["citaro_frame", "citaro_frame", "Frame",{"nodeOffset":""}],
+    ],
+},
+
+"citaro_frame": {
+    "information":{
+        "authors":"dave180sx, johnville",
+        "name":"Frame",
+    }
+    
+	"slotType" : "citaro_frame",
+    "slots": [
+        ["type", "default", "description"]
+		["citaro_suspension_F", "citaro_suspension_F", "Front Suspension",{"nodeOffset":""}],
+		["citaro_suspension_R", "citaro_suspension_R", "Rear Suspension",{"nodeOffset":""}],
+		["citaro_mechanical", "citaro_mechanical", "Mechnical",{"nodeOffset":""}],
     ],
 	
     "nodes": [       
@@ -2923,5 +2937,5 @@
 		["nl42","nl57"],
 		["nr47","nr86"],
     ],
-}
+},
 }

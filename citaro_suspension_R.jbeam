@@ -4,95 +4,25 @@
         "authors":"dave180sx, johnville",
         "name":"Rear Suspension",
     }
-    "slotType" : "citaro_suspension_R",
+    
+	"slotType" : "citaro_suspension_R",
 	"slots": [
         ["type", "default", "description"]
-        ["citaro_wheeldata_R","citaro_wheeldata_R", "Rear Wheels",{"nodeOffset":""}],
-		["citaro_axle_zfav132_R","citaro_axle_zfav132_R", "Rear Axle (ZF AV132)",{"nodeOffset":""}],
-	],
-},
-
-"citaro_wheeldata_R": {
-    "information":{
-        "authors":"dave180sx, johnville",
-        "name":"Rear wheels",
-    }
-    "slotType" : "citaro_wheeldata_R",
-	
-	"pressureWheels": [
-		["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
-		{"enableTireReinfBeams":true},
-		{"enableTireSideReinfBeams":true},
-		{"radius":0.478},
-		{"hubRadius":0.286},
-		{"tireWidth":0.600},
-		{"hubWidth":0.600},
-		{"wheelOffset":-0.15},
-		{"numRays":20},
-		
-		{"hubTreadBeamSpring":2151000, "hubTreadBeamDamp":3},
-		{"hubPeripheryBeamSpring":2151000, "hubPeripheryBeamDamp":3},
-		{"hubSideBeamSpring":2151000, "hubSideBeamDamp":3},
-		{"hubBeamDeform":112000, "hubBeamStrength":154000},
-		{"hubNodeWeight":0.85},
-		{"hubNodeMaterial":"|NM_METAL"},
-		{"hubFrictionCoef":0.5},
-		
-		// Tire options
-		{"wheelSideBeamSpring":0,"wheelSideBeamDamp":15},
-		{"wheelSideBeamSpringExpansion":121000,"wheelSideBeamDampExpansion":20},
-		{"wheelSideReinfBeamSpring":0,"wheelSideReinfBeamDamp":15},
-		{"wheelSideReinfBeamSpringExpansion":391000,"wheelSideReinfBeamDampExpansion":20},
-		{"wheelReinfBeamSpring":21000,"wheelReinfBeamDamp":50},
-		{"wheelReinfBeamSpringExpansion":21000,"wheelReinfBeamDampExpansion":50},
-		{"wheelTreadBeamSpring":301000,"wheelTreadBeamDamp":40},
-		{"wheelTreadBeamSpringExpansion":301000,"wheelTreadBeamDampExpansion":40},
-		{"wheelPeripheryBeamSpring":391000,"wheelPeripheryBeamDamp":20},
-		
-		// Deform values
-		{"wheelSideBeamDeform":78000,"wheelSideBeamStrength":95000},
-		{"wheelSideReinfBeamDeform":78000,"wheelSideReinfBeamStrength":95000},
-		{"wheelReinfBeamDeform":78000,"wheelReinfBeamStrength":95000},
-		{"wheelTreadBeamDeform":78000,"wheelTreadBeamStrength":95000},
-		{"wheelPeripheryBeamDeform":78000,"wheelPeripheryBeamStrength":95000},
-		
-		// General tire values
-		{"nodeWeight":0.45},
-		{"nodeMaterial":"|NM_RUBBER"},
-		{"frictionCoef":1.22},
-		{"pressurePSI":75},
-		{"maxPressurePSI":2000},
-		{"dragCoef":20},
-		
-		// Rear
-		{"selfCollision":false},
-		{"collision":true},
-		{"triangleCollision":false},
-		{"enableHubcaps":false},
-		{"propulsed":1},
-		["RL", "wheel_RL", "tire_RL", "ar8", "ar10", 9999,  "ar28", -1,  {"speedo" : false, "torqueArm":"ar28"}],
-		["RR", "wheel_RR", "tire_RR", "ar23", "ar21", 9999,  "ar20", 1,  {"speedo" : false, "torqueArm":"ar20"}],
-		{"enableTireLbeams":false},
-		{"enableTreadReinfBeams":false},
-		{"propulsed":0},
-		
-		// Brakes
-		{"enableABS":true},
-        {"ABSthreshold":1.1},
-        {"brakeTorque":8200},
-        {"brakeInputSplit":1},
-        {"brakeSplitCoef":1},
-        {"parkingTorque":0},
-        {"brakeSpring":75},
+		["citaro_axle_zfav132_R", "citaro_axle_zfav132_R", "Rear Axle (ZF AV132)",{"nodeOffset":""}],
 	],
 },
 
 "citaro_axle_zfav132_R": {
     "information":{
         "authors":"dave180sx, johnville",
-        "name":"Front axle ZF RL75A",
+        "name":"Rear Axle (ZF AV132)",
     }
-    "slotType" : "citaro_axle_zfav132_R",
+    
+	"slotType" : "citaro_axle_zfav132_R",
+	"slots": [
+        ["type", "default", "description"]
+        ["citaro_wheeldata_R", "citaro_wheeldata_R", "Rear Wheels",{"nodeOffset":""}],
+	],
 	
 	"nodes": [       
         ["id", "posX", "posY", "posZ"],
@@ -333,6 +263,81 @@
 		["af18","nr159"],
 		["af15","nl156"],          
 		{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+	],
+},
+
+"citaro_wheeldata_R": {
+    "information":{
+        "authors":"dave180sx, johnville",
+        "name":"Rear Wheels",
+    }
+    "slotType" : "citaro_wheeldata_R",
+	
+	"pressureWheels": [
+		["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+		{"enableTireReinfBeams":true},
+		{"enableTireSideReinfBeams":true},
+		{"radius":0.478},
+		{"hubRadius":0.286},
+		{"tireWidth":0.600},
+		{"hubWidth":0.600},
+		{"wheelOffset":-0.15},
+		{"numRays":20},
+		
+		{"hubTreadBeamSpring":2151000, "hubTreadBeamDamp":3},
+		{"hubPeripheryBeamSpring":2151000, "hubPeripheryBeamDamp":3},
+		{"hubSideBeamSpring":2151000, "hubSideBeamDamp":3},
+		{"hubBeamDeform":112000, "hubBeamStrength":154000},
+		{"hubNodeWeight":0.85},
+		{"hubNodeMaterial":"|NM_METAL"},
+		{"hubFrictionCoef":0.5},
+		
+		// Tire options
+		{"wheelSideBeamSpring":0,"wheelSideBeamDamp":15},
+		{"wheelSideBeamSpringExpansion":121000,"wheelSideBeamDampExpansion":20},
+		{"wheelSideReinfBeamSpring":0,"wheelSideReinfBeamDamp":15},
+		{"wheelSideReinfBeamSpringExpansion":391000,"wheelSideReinfBeamDampExpansion":20},
+		{"wheelReinfBeamSpring":21000,"wheelReinfBeamDamp":50},
+		{"wheelReinfBeamSpringExpansion":21000,"wheelReinfBeamDampExpansion":50},
+		{"wheelTreadBeamSpring":301000,"wheelTreadBeamDamp":40},
+		{"wheelTreadBeamSpringExpansion":301000,"wheelTreadBeamDampExpansion":40},
+		{"wheelPeripheryBeamSpring":391000,"wheelPeripheryBeamDamp":20},
+		
+		// Deform values
+		{"wheelSideBeamDeform":78000,"wheelSideBeamStrength":95000},
+		{"wheelSideReinfBeamDeform":78000,"wheelSideReinfBeamStrength":95000},
+		{"wheelReinfBeamDeform":78000,"wheelReinfBeamStrength":95000},
+		{"wheelTreadBeamDeform":78000,"wheelTreadBeamStrength":95000},
+		{"wheelPeripheryBeamDeform":78000,"wheelPeripheryBeamStrength":95000},
+		
+		// General tire values
+		{"nodeWeight":0.45},
+		{"nodeMaterial":"|NM_RUBBER"},
+		{"frictionCoef":1.22},
+		{"pressurePSI":75},
+		{"maxPressurePSI":2000},
+		{"dragCoef":20},
+		
+		// Rear
+		{"selfCollision":false},
+		{"collision":true},
+		{"triangleCollision":false},
+		{"enableHubcaps":false},
+		{"propulsed":1},
+		["RL", "wheel_RL", "tire_RL", "ar8", "ar10", 9999,  "ar28", -1,  {"speedo" : false, "torqueArm":"ar28"}],
+		["RR", "wheel_RR", "tire_RR", "ar23", "ar21", 9999,  "ar20", 1,  {"speedo" : false, "torqueArm":"ar20"}],
+		{"enableTireLbeams":false},
+		{"enableTreadReinfBeams":false},
+		{"propulsed":0},
+		
+		// Brakes
+		{"enableABS":true},
+        {"ABSthreshold":1.1},
+        {"brakeTorque":8200},
+        {"brakeInputSplit":1},
+        {"brakeSplitCoef":1},
+        {"parkingTorque":0},
+        {"brakeSpring":75},
 	],
 },
 }

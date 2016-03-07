@@ -7,7 +7,7 @@
     "slotType" : "citaro_mechanical",
 	"slots": [
         ["type", "default", "description"]
-        //["","", "Front Wheels",{"nodeOffset":""}],
+        //["", "", "",{"nodeOffset":""}],
 	],
 	
 	"enginetorque":[
