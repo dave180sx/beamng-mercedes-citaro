@@ -292,7 +292,7 @@
 		["af24","af33"],
 		
 		//Tie rod
-		{"beamDeform":8000000,"beamStrength":80000},
+		{"beamDeform":8000000,"beamStrength":2000000},
 		["af33","af32"],
 		
 		// Link sur le frame
@@ -305,10 +305,10 @@
 		
 		// Steering damper
 		{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1.0, "beamShortBound":1.0},
-		{"beamSpring":0,"beamDamp":4500},
+		{"beamSpring":0,"beamDamp":1500},
         {"beamDeform":80000,"beamStrength":800000},
 		{"beamLimitSpring":0,"beamLimitDamp":0},
-		["af30","af32",{"beamDampRebound":12000}],
+		["af30","af32",{"beamDampRebound":5000}],
 		
 		// Front progressive springs
 		{"beamPrecompression":1.35, "beamType":"|BOUNDED", "beamLongBound":0.2, "beamShortBound":0.20},
@@ -334,6 +334,7 @@
 	
 	"hydros": [
         ["id1:","id2:"],
+		{"beamSpring":1000000,"beamDamp":1000},
 		["af14","nl96",{"factor":0.10,"steeringWheelLock":460,"lockDegrees":25}],		
     ]
 },
