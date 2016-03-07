@@ -13,8 +13,8 @@
 	"enginetorque":[
         ["rpm", "torque"] //Torque curve
         [0, 0],
-        [250, 1000],
-		[500, 700],
+        [250, 400],
+		[500, 600],
         [1000, 730],
         [1200, 870],
         [1400, 900],
@@ -44,7 +44,7 @@
         "highShiftDownRPM":1400,
         "highShiftUpRPM":2000,
         // -1, 0 (neutral), 1, etc
-		"gears":[-10, 0, 7.8, 5, 3.5, 2, 1.2, 0.62] //Gear ratios
+		"gears":[-2, 0, 7.8, 4, 3, 2, 1.2, 0.62] //Gear ratios
         "clutchDuration":1.25
         "viscousCoupling":50
         "lockingTorqueLimit":1250

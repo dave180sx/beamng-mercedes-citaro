@@ -138,7 +138,7 @@
 	
 	"beams": [   
         ["id1:", "id2:"], 
-        {"beamSpring":6000000,"beamDamp":500},
+        {"beamSpring":10000000,"beamDamp":500},
         {"beamDeform":80000,"beamStrength":"FLT_MAX"},
 		["ar9","ar31"],
 		["ar31","ar15"],
