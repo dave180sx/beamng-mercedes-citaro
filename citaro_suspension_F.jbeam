@@ -28,7 +28,7 @@
 		{"tireWidth":0.275},
 		{"hubWidth":0.275},
 		{"wheelOffset":0.05},
-		{"numRays":16},
+		{"numRays":20},
 		
 		{"hubTreadBeamSpring":2151000, "hubTreadBeamDamp":3},
 		{"hubPeripheryBeamSpring":2151000, "hubPeripheryBeamDamp":3},
@@ -60,7 +60,7 @@
 		{"nodeWeight":0.45},
 		{"nodeMaterial":"|NM_RUBBER"},
 		{"frictionCoef":1.22},
-		{"pressurePSI":30},
+		{"pressurePSI":75},
 		{"maxPressurePSI":2000},
 		{"dragCoef":20},
 		
