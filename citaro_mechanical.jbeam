@@ -34,7 +34,7 @@
         "friction":16
         "brakingCoefRPS":12
         "burnEfficiency":0.35
-        "throttleSensitivity":1.2
+        "throttleSensitivity":0.8
          
         //transmission section
         "transmissionType":"automatic", //Automatic or manual, setting automatic will restrict the use of manual mode while playing.
