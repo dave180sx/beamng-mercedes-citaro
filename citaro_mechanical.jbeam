@@ -39,12 +39,12 @@
         //transmission section
         "transmissionType":"automatic", //Automatic or manual, setting automatic will restrict the use of manual mode while playing.
         "differential":5.12
-		"lowShiftDownRPM":500,
-        "lowShiftUpRPM":900,
-        "highShiftDownRPM":1400,
+		"lowShiftDownRPM":400,
+        "lowShiftUpRPM":1000,
+        "highShiftDownRPM":1200,
         "highShiftUpRPM":2000,
         // -1, 0 (neutral), 1, etc
-		"gears":[-2, 0, 7.8, 4, 3, 2, 1.2, 0.62] //Gear ratios
+		"gears":[-2, 0, 7.8, 4, 2.9, 1.8, 1, 0.62] //Gear ratios
         "clutchDuration":1.25
         "viscousCoupling":50
         "lockingTorqueLimit":1250

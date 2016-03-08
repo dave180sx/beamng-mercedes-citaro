@@ -587,7 +587,7 @@
  
   "beams": [   
         ["id1:", "id2:"], 
-        {"beamSpring":4000000,"beamDamp":400},
+        {"beamSpring":12000000,"beamDamp":400},
         {"beamDeform":80000,"beamStrength":800000},
 		["nr427","nr424"],
 		["nr424","nr430"],
