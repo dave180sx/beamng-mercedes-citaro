@@ -240,7 +240,7 @@
 		["ar19","nr340"],
 		["ar15","nl335"],
 		// Front progressive springs
-		{"beamPrecompression":1.35, "beamType":"|BOUNDED", "beamLongBound":0.2, "beamShortBound":0.20},
+		{"beamPrecompression":1.35, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
 		{"beamDeform":200500,"beamStrength":250500},
 		{"beamSpring":10000,"beamDamp":0},
 		{"beamLimitSpring":351000,"beamLimitDamp":0},
@@ -257,9 +257,9 @@
 		["ar31","nl374",{"beamDampRebound":12300}],
 		["ar0","nl330",{"beamDampRebound":12300}],
 		// Bump stops
-		{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":0.25, "beamShortBound":0.20},
+		{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
 		{"beamSpring":0,"beamDamp":0},
-		{"beamLimitSpring":1001000,"beamLimitDamp":5000},
+		{"beamLimitSpring":2000000,"beamLimitDamp":5000},
 		["af18","nr159"],
 		["af15","nl156"],          
 		{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
