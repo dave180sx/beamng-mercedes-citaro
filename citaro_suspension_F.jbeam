@@ -31,11 +31,11 @@
         {"nodeMaterial":"|NM_METAL"},
         {"collision":true},
         {"selfCollision":false},
-		["af2",0.532,-3.122,0.315],
-		["af3",0.505,-3.122,0.501],
+		["af2",0.532,-3.172,0.315],
+		["af3",0.505,-3.172,0.501],
 		["af4",0.0,-3.122,0.501],
-		["af5",-0.505,-3.122,0.501],
-		["af6",-0.532,-3.122,0.315],
+		["af5",-0.505,-3.172,0.501],
+		["af6",-0.532,-3.172,0.315],
 		["af7",0.0,-3.042,0.315],
 		["af9",0.958,-3.002,0.388],
 		["af11",0.958,-3.002,0.814],
@@ -45,12 +45,12 @@
 		["af18",-0.678,-3.002,0.9],
 		["af22",-0.958,-3.002,0.388],
 		["af24",-0.958,-3.002,0.814],
-		["af26",0.532,-2.882,0.315],
-		["af27",0.505,-2.882,0.501],
+		["af26",0.532,-2.832,0.315],
+		["af27",0.505,-2.832,0.501],
 		["af28",0.0,-2.882,0.315],
 		["af29",0.0,-2.882,0.501],
-		["af30",-0.505,-2.882,0.501],
-		["af31",-0.532,-2.882,0.315],
+		["af30",-0.505,-2.832,0.501],
+		["af31",-0.532,-2.832,0.315],
 		
 		// Left knuckle
 		["af0",0.958,-3.135,0.601],
@@ -226,7 +226,7 @@
 		["af33","af32"],
 		
 		// Link sur le frame
-		{"beamSpring":8000000,"beamDamp":1000},
+		{"beamSpring":10000000,"beamDamp":1000},
         {"beamDeform":80000,"beamStrength":800000},
 		["af17","nr144"],
 		["af16","nl141"],
@@ -241,10 +241,10 @@
 		["af30","af32",{"beamDampRebound":5000}],
 		
 		// Front progressive springs
-		{"beamPrecompression":1.35, "beamType":"|BOUNDED", "beamLongBound":0.15, "beamShortBound":0.40},
+		{"beamPrecompression":1.1, "beamType":"|BOUNDED", "beamLongBound":0.10, "beamShortBound":0.95},
 		{"beamDeform":200500,"beamStrength":250500},
-		{"beamSpring":10000,"beamDamp":0},
-		{"beamLimitSpring":351000,"beamLimitDamp":0},
+		{"beamSpring":30000,"beamDamp":0},
+		{"beamLimitSpring":375000,"beamLimitDamp":0},
 		["af18","nr159"],
 		["af15","nl156"],
 		
@@ -256,9 +256,9 @@
 		["af15","nl156",{"beamDampRebound":12300}],
 		
 		// Bump stops
-		{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":0.15, "beamShortBound":0.40},
+		{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":0.10, "beamShortBound":0.80},
 		{"beamSpring":0,"beamDamp":0},
-		{"beamLimitSpring":1001000,"beamLimitDamp":5000},
+		{"beamLimitSpring":8001000,"beamLimitDamp":5000},
 		["af18","nr159"],
 		["af15","nl156"],          
 		{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
