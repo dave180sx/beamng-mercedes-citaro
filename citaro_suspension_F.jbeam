@@ -40,8 +40,8 @@
 		["af9",0.958,-3.002,0.388],
 		["af11",0.958,-3.002,0.814],
 		["af15",0.678,-3.002,0.9],
-		["af16",0.505,-3.002,0.674],
-		["af17",-0.505,-3.002,0.674],
+		["af16",0.505,-3.002,0.774],
+		["af17",-0.505,-3.002,0.774],
 		["af18",-0.678,-3.002,0.9],
 		["af22",-0.958,-3.002,0.388],
 		["af24",-0.958,-3.002,0.814],
@@ -226,7 +226,7 @@
 		["af33","af32"],
 		
 		// Link sur le frame
-		{"beamSpring":10000000,"beamDamp":1000},
+		{"beamSpring":8000000,"beamDamp":1000},
         {"beamDeform":80000,"beamStrength":800000},
 		["af17","nr144"],
 		["af16","nl141"],
@@ -241,24 +241,24 @@
 		["af30","af32",{"beamDampRebound":5000}],
 		
 		// Front progressive springs
-		{"beamPrecompression":1.1, "beamType":"|BOUNDED", "beamLongBound":0.10, "beamShortBound":0.95},
+		{"beamPrecompression":1.25, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
 		{"beamDeform":200500,"beamStrength":250500},
-		{"beamSpring":30000,"beamDamp":0},
-		{"beamLimitSpring":375000,"beamLimitDamp":0},
+		{"beamSpring":12000,"beamDamp":0},
+		{"beamLimitSpring":300000,"beamLimitDamp":0},
 		["af18","nr159"],
 		["af15","nl156"],
 		
 		// Dampers
 		{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1.0, "beamShortBound":1.0},
-		{"beamSpring":0,"beamDamp":4500},
+		{"beamSpring":0,"beamDamp":8500},
 		{"beamLimitSpring":0,"beamLimitDamp":0},
-		["af18","nr159",{"beamDampRebound":12300}],
-		["af15","nl156",{"beamDampRebound":12300}],
+		["af18","nr159",{"beamDampRebound":10300}],
+		["af15","nl156",{"beamDampRebound":10300}],
 		
 		// Bump stops
-		{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":0.10, "beamShortBound":0.80},
+		{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
 		{"beamSpring":0,"beamDamp":0},
-		{"beamLimitSpring":8001000,"beamLimitDamp":5000},
+		{"beamLimitSpring":2000000,"beamLimitDamp":5000},
 		["af18","nr159"],
 		["af15","nl156"],          
 		{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
