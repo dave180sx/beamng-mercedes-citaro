@@ -31,9 +31,9 @@
         "shiftUpRPM":2300, //Up shift, for automatic
         "maxRPM":2400, //Max RPM for the engine, basically a redline. 
         "inertia":4,
-        "friction":16
+        "friction":1
         "brakingCoefRPS":12
-        "burnEfficiency":0.35
+        "burnEfficiency":100.8
         "throttleSensitivity":0.8
          
         //transmission section
@@ -41,8 +41,8 @@
         "differential":5.12
 		"lowShiftDownRPM":400,
         "lowShiftUpRPM":1000,
-        "highShiftDownRPM":1200,
-        "highShiftUpRPM":2000,
+        "highShiftDownRPM":1000,
+        "highShiftUpRPM":1900,
         // -1, 0 (neutral), 1, etc
 		"gears":[-2, 0, 7.8, 4, 2.9, 1.8, 1, 0.62] //Gear ratios
         "clutchDuration":1.25

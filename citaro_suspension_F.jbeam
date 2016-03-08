@@ -267,7 +267,8 @@
 	"hydros": [
         ["id1:","id2:"],
 		{"beamSpring":1000000,"beamDamp":1000},
-		["af14","nl96",{"factor":0.13,"steeringWheelLock":460,"lockDegrees":25}],		
+		["af14","nl96",{"factor":0.13,"steeringWheelLock":880,"lockDegrees":25}],	
+		
     ]
 },
 
