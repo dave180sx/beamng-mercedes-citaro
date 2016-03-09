@@ -235,10 +235,10 @@
 		
 		// Steering damper
 		{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1.0, "beamShortBound":1.0},
-		{"beamSpring":0,"beamDamp":3000},
+		{"beamSpring":0,"beamDamp":6000},
         {"beamDeform":80000,"beamStrength":800000},
 		{"beamLimitSpring":0,"beamLimitDamp":0},
-		["af30","af32",{"beamDampRebound":3000}],
+		["af30","af32",{"beamDampRebound":6000}],
 		
 		// Front progressive springs
 		{"beamPrecompression":1.25, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
