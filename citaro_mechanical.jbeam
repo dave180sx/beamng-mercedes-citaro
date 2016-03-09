@@ -46,7 +46,7 @@
         // -1, 0 (neutral), 1, etc
 		"gears":[-2, 0, 5, 4, 2.9, 1.8, 1, 0.62] //Gear ratios
         "clutchDuration":0.25
-        "viscousCoupling":7.5
+        "viscousCoupling":6.5
         "lockingTorqueLimit":1
         "enableLocking":true
         },
