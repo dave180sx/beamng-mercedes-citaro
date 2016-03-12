@@ -41,14 +41,19 @@
         "differential":5.12
 		"lowShiftDownRPM":400,
         "lowShiftUpRPM":1000,
-        "highShiftDownRPM":1000,
-        "highShiftUpRPM":1900,
+        "highShiftDownRPM":1500,
+        "highShiftUpRPM":2000,
         // -1, 0 (neutral), 1, etc
-		"gears":[-2, 0, 7.8, 4, 2.9, 1.8, 1, 0.62] //Gear ratios
-        "clutchDuration":1.25
-        "viscousCoupling":50
-        "lockingTorqueLimit":1250
+		"gears":[-2, 0, 5, 4, 2.9, 1.8, 1, 0.62] //Gear ratios
+        "clutchDuration":0.25
+        "viscousCoupling":6.5
+        "lockingTorqueLimit":1
         "enableLocking":true
         },
+	
+	"differentials": [
+            ["wheelName1", "wheelName2", "type", "state", "closedTorque", "engineTorqueCoef"],
+            ["RL","RR", "open", "open", 0, 1]
+    ],
 },
 }
