@@ -69,7 +69,7 @@
 	"beams": [   
         ["id1:", "id2:"], 
         {"beamSpring":10000000,"beamDamp":500},
-        {"beamDeform":80000,"beamStrength":"FLT_MAX"},
+        {"beamDeform":800000,"beamStrength":"FLT_MAX"},
 		["ar9","ar31"],
 		["ar31","ar15"],
 		["ar28","ar15"],
@@ -231,6 +231,7 @@
 		["ar5","ar0"],
 		["ar1","ar5"],
 		["ar32","ar26"],
+		["ar15","ar19"],
 		
 		// Link sur le frame
 		{"beamSpring":18000000,"beamDamp":1000},
@@ -242,7 +243,7 @@
 		// Front progressive springs
 		{"beamPrecompression":1.35, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
 		{"beamDeform":200500,"beamStrength":250500},
-		{"beamSpring":8000,"beamDamp":0},
+		{"beamSpring":80000,"beamDamp":0},
 		{"beamLimitSpring":351000,"beamLimitDamp":0},
 		["ar32","nr375"],
 		["ar1","nr331"],
