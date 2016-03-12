@@ -26,7 +26,7 @@
 	
 	"nodes": [       
         ["id", "posX", "posY", "posZ"],
-        {"nodeWeight":10},
+        {"nodeWeight":15},
         {"frictionCoef":0.5},
         {"nodeMaterial":"|NM_METAL"},
         {"collision":true},
