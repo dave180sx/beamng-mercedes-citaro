@@ -340,7 +340,7 @@
 		// Brakes
 		{"enableABS":true},
         {"ABSthreshold":1.1},
-        {"brakeTorque":10200},
+        {"brakeTorque":20000},
         {"brakeInputSplit":1},
         {"brakeSplitCoef":1},
         {"parkingTorque":0},
