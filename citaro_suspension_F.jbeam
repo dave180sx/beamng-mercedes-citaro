@@ -243,25 +243,25 @@
 		// Front progressive springs
 		{"beamPrecompression":1.25, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
 		{"beamDeform":200500,"beamStrength":250500},
-		{"beamSpring":12000,"beamDamp":0},
+		{"beamSpring":82000,"beamDamp":0},
 		{"beamLimitSpring":300000,"beamLimitDamp":0},
 		["af18","nr159"],
 		["af15","nl156"],
 		
 		// Dampers
 		{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1.0, "beamShortBound":1.0},
-		{"beamSpring":0,"beamDamp":8500},
+		{"beamSpring":0,"beamDamp":4000},
 		{"beamLimitSpring":0,"beamLimitDamp":0},
-		["af18","nr159",{"beamDampRebound":10300}],
-		["af15","nl156",{"beamDampRebound":10300}],
+		["af18","nr159",{"beamDampRebound":7300}],
+		["af15","nl156",{"beamDampRebound":7300}],
 		
 		// Bump stops
-		{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
-		{"beamSpring":0,"beamDamp":0},
-		{"beamLimitSpring":2000000,"beamLimitDamp":5000},
-		["af18","nr159"],
-		["af15","nl156"],          
-		{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		//{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
+		//{"beamSpring":0,"beamDamp":0},
+		//{"beamLimitSpring":2000000,"beamLimitDamp":5000},
+		//["af18","nr159"],
+		//["af15","nl156"],          
+		//{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
 	],
 	
 	"hydros": [
@@ -340,7 +340,7 @@
 		// Brakes
 		{"enableABS":true},
         {"ABSthreshold":1.1},
-        {"brakeTorque":7200},
+        {"brakeTorque":10200},
         {"brakeInputSplit":1},
         {"brakeSplitCoef":1},
         {"parkingTorque":0},

@@ -25,7 +25,7 @@
 		["citaro_suspension_R", "citaro_suspension_R", "Rear Suspension",{"nodeOffset":""}],
 		["citaro_mechanical", "citaro_mechanical", "Mechnical",{"nodeOffset":""}],
     ],
-	
+	// to do : baisser masse fenetre et plancher avant
     "nodes": [       
         ["id", "posX", "posY", "posZ"],
         {"nodeWeight":10},
