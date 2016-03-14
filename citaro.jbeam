@@ -10,6 +10,10 @@
         ["type", "default", "description"]
 		["citaro_frame", "citaro_frame", "Frame",{"nodeOffset":""}],
     ],
+	"refNodes":[
+		["ref:", "back:", "left:", "up:", "leftCorner:", "rightCorner:"]
+		["nr286", "nr328", "nl282", "nr287", "nl16", "nr18"]
+	],
 },
 
 "citaro_frame": {
