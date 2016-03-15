@@ -227,7 +227,7 @@
 		
 		// Link sur le frame
 		{"beamSpring":25000000,"beamDamp":1000},
-        {"beamDeform":80000,"beamStrength":800000},
+        {"beamDeform":80000,"beamStrength":2000000},
 		["af17","nr144"],
 		["af16","nl141"],
 		["af7","nl139"],
