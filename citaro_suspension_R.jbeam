@@ -241,7 +241,7 @@
 		["ar19","nr340"],
 		["ar15","nl335"],
 		// Front progressive springs
-		{"beamPrecompression":1.35, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
+		{"beamPrecompression":1.2, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
 		{"beamDeform":200500,"beamStrength":250500},
 		{"beamSpring":80000,"beamDamp":0},
 		{"beamLimitSpring":351000,"beamLimitDamp":0},

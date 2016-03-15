@@ -241,7 +241,7 @@
 		["af30","af32",{"beamDampRebound":12000}],
 		
 		// Front progressive springs
-		{"beamPrecompression":1.25, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
+		{"beamPrecompression":1.15, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
 		{"beamDeform":200500,"beamStrength":250500},
 		{"beamSpring":100000,"beamDamp":0},
 		{"beamLimitSpring":300000,"beamLimitDamp":0},
