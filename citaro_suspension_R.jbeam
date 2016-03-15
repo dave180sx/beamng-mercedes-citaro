@@ -265,6 +265,11 @@
 		//["af15","nl156"],          
 		//{"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
 	],
+	
+	"differentials": [
+            ["wheelName1", "wheelName2", "type", "state", "closedTorque", "engineTorqueCoef"],
+            ["RR","RL", "open", "open", 0, 1]
+    ],
 },
 
 "citaro_wheeldata_R": {
@@ -276,6 +281,13 @@
 	
 	"pressureWheels": [
 		["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+		// Brakes
+        {"brakeTorque":12000},
+        {"parkingTorque":20000},
+        {"brakeSpring":75},
+		
+		{"propulsed":1},
+		
 		{"enableTireReinfBeams":true},
 		{"enableTireSideReinfBeams":true},
 		{"radius":0.478},
@@ -324,21 +336,11 @@
 		{"collision":true},
 		{"triangleCollision":false},
 		{"enableHubcaps":false},
-		{"propulsed":1},
 		["RL", "wheel_RL", "tire_RL", "ar8", "ar10", 9999,  "ar28", -1,  {"speedo" : true, "torqueArm":"ar28"}],
-		["RR", "wheel_RR", "tire_RR", "ar23", "ar21", 9999,  "ar20", 1,  {"speedo" : true, "torqueArm":"ar20"}],
+		["RR", "wheel_RR", "tire_RR", "ar23", "ar21", 9999,  "ar20", 1,  {"torqueArm":"ar20"}],
 		{"enableTireLbeams":false},
 		{"enableTreadReinfBeams":false},
 		{"propulsed":0},
-		
-		// Brakes
-		{"enableABS":true},
-        {"ABSthreshold":1.1},
-        {"brakeTorque":8200},
-        {"brakeInputSplit":1},
-        {"brakeSplitCoef":1},
-        {"parkingTorque":0},
-        {"brakeSpring":75},
 	],
 },
 }

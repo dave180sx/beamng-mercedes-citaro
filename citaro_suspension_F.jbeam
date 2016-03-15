@@ -282,6 +282,11 @@
 	
 	"pressureWheels": [
 		["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+		// Brakes
+        {"brakeTorque":8000},
+        {"parkingTorque":0},
+        {"brakeSpring":75},
+		
 		{"enableTireReinfBeams":true},
 		{"enableTireSideReinfBeams":true},
 		{"radius":0.478},
@@ -331,20 +336,13 @@
 		{"triangleCollision":false},
 		{"enableHubcaps":false},
 		{"propulsed":0},
-		["FL", "wheel_FL", "tire_FL", "af8", "af10", 9999,  "af32", -1,  {"speedo" : false, "torqueArm":"af32"}],
-		["FR", "wheel_FR", "tire_FR", "af25", "af23", 9999,  "af33", 1,  {"speedo" : false, "torqueArm":"af33"}],
+		["FL", "wheel_FL", "tire_FL", "af8", "af10", 9999,  "af32", -1,  {"torqueArm":"af32"}],
+		["FR", "wheel_FR", "tire_FR", "af25", "af23", 9999,  "af33", 1,  {"torqueArm":"af33"}],
 		{"enableTireLbeams":false},
 		{"enableTreadReinfBeams":false},
 		{"propulsed":0},
-		
-		// Brakes
-		{"enableABS":true},
-        {"ABSthreshold":1.1},
-        {"brakeTorque":20000},
-        {"brakeInputSplit":1},
-        {"brakeSplitCoef":1},
+        {"brakeTorque":0},
         {"parkingTorque":0},
-        {"brakeSpring":75},
 	],
 },
 }
