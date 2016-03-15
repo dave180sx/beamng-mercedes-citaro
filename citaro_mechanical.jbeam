@@ -7,8 +7,17 @@
     "slotType" : "citaro_mechanical",
 	"slots": [
         ["type", "default", "description"]
-        //["", "", "",{"nodeOffset":""}],
+        ["citaro_engine", "citaro_I6_9L", "Engine",{"nodeOffset":""}],
+        ["citaro_transmission", "citaro_transmission_ecolife", "Transmission",{"nodeOffset":""}],
 	],
+},
+
+"citaro_I6_9L": {
+    "information":{
+        "authors":"dave180sx, johnville",
+        "name":"9.0L Inline 6 Diesel Engine",
+    }
+    "slotType" : "citaro_engine",
 	
 	"enginetorque":[
         ["rpm", "torque"] //Torque curve
@@ -25,7 +34,7 @@
         [2400, 900],
     ],
 	
-    "engine":{
+	"engine":{
         "idleRPM":700, //Idling RPM
         "shiftDownRPM":1200, //Down shift, for automatic
         "shiftUpRPM":2300, //Up shift, for automatic
@@ -35,13 +44,23 @@
         "brakingCoefRPS":12
         "burnEfficiency":0.8
         "throttleSensitivity":1.0
-         
-        //transmission section
+	},
+},
+
+"citaro_transmission_ecolife": {
+    "information":{
+        "authors":"dave180sx, johnville",
+        "name":"Ecolife 6-Speed Automatic Transmission",
+    }
+    "slotType" : "citaro_transmission",
+	
+	"engine":{        
         "transmissionType":"automatic", //Automatic or manual, setting automatic will restrict the use of manual mode while playing.
 		"lowShiftDownRPM":700,
         "lowShiftUpRPM":1100,
         "highShiftDownRPM":1200,
         "highShiftUpRPM":2100,
+
         // -1, 0 (neutral), 1, etc
 		//"gears":[-3.05, 0, 3.49, 1.86, 1.41, 1, 0.75, 0.65] //Gear ratios Allison B400R
 		"gears":[-3.05, 0, 3.36, 1.91, 1.42, 1, 0.72, 0.62] //Gear ratios ZF ECOLIFE
@@ -51,10 +70,5 @@
         "lockingTorqueLimit":2000
         "enableLocking":true
         },
-	
-	"differentials": [
-            ["wheelName1", "wheelName2", "type", "state", "closedTorque", "engineTorqueCoef"],
-            ["RL","RR", "open", "open", 0, 1]
-    ],
 },
 }
