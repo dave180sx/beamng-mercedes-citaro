@@ -61,14 +61,12 @@
         "highShiftDownRPM":1200,
         "highShiftUpRPM":1700,
         // -1, 0 (neutral), 1, etc
-		//"gears":[-3, 0, 4.5, 1.0, 0.75, 0.55, 0.42, 0.3] //Gear ratios
-		"gears":[-3, 0, 12.0, 10.0, 5.75, 3.75, 2.1, 1.5] //Gear ratios
-        "clutchDuration":0.4,
-        //"viscousCoupling":10.8,
-        "viscousCoupling":10.8,
-		//"differential":5.12,
-        "lockingTorqueLimit":5000,
-        "enableLocking":true,
-	},
+		"gears":[-5.05, 0, 3.49, 1.86, 1.41, 1, 0.75, 0.65] //Gear ratios Allison B400R
+        "clutchDuration":0.5
+        "viscousCoupling":20.5
+		"differential":5.12
+        "lockingTorqueLimit":2000
+        "enableLocking":true
+        },
 },
 }
