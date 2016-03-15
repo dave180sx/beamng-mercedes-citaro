@@ -68,7 +68,7 @@
 	
 	"beams": [   
         ["id1:", "id2:"], 
-        {"beamSpring":15000000,"beamDamp":500},
+        {"beamSpring":25000000,"beamDamp":500},
         {"beamDeform":8000000,"beamStrength":"FLT_MAX"},
 		["ar9","ar31"],
 		["ar31","ar15"],
@@ -234,7 +234,7 @@
 		["ar15","ar19"],
 		
 		// Link sur le frame
-		{"beamSpring":18000000,"beamDamp":1000},
+		{"beamSpring":25000000,"beamDamp":1000},
         {"beamDeform":80000,"beamStrength":800000},
 		["ar7","nl336"],
 		["ar7","nr339"],
