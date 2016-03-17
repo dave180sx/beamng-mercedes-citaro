@@ -227,7 +227,7 @@
 		
 		// Link sur le frame
 		{"beamSpring":25000000,"beamDamp":1000},
-        {"beamDeform":80000,"beamStrength":800000},
+        {"beamDeform":800000,"beamStrength":800000},
 		["af17","nr144"],
 		["af16","nl141"],
 		["af7","nl139"],
@@ -243,7 +243,7 @@
 		// Front progressive springs
 		{"beamPrecompression":1.15, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
 		{"beamDeform":200500,"beamStrength":250500},
-		{"beamSpring":100000,"beamDamp":0},
+		{"beamSpring":120000,"beamDamp":0},
 		{"beamLimitSpring":300000,"beamLimitDamp":0},
 		["af18","nr159"],
 		["af15","nl156"],
@@ -267,7 +267,7 @@
 	"hydros": [
         ["id1:","id2:"],
 		{"beamSpring":1000000,"beamDamp":1000},
-		["af14","nl550",{"factor":0.4,"steeringWheelLock":1000,"lockDegrees":25}],	
+		["af14","nl550",{"factor":0.45,"steeringWheelLock":1000,"lockDegrees":25}],	
 		
     ]
 },
@@ -309,7 +309,7 @@
 		{"wheelSideBeamSpringExpansion":121000,"wheelSideBeamDampExpansion":20},
 		{"wheelSideReinfBeamSpring":0,"wheelSideReinfBeamDamp":15},
 		{"wheelSideReinfBeamSpringExpansion":391000,"wheelSideReinfBeamDampExpansion":20},
-		{"wheelReinfBeamSpring":21000,"wheelReinfBeamDamp":50},
+		{"wheelReinfBeamSpring":50000,"wheelReinfBeamDamp":50},//{"wheelReinfBeamSpring":21000,"wheelReinfBeamDamp":50},
 		{"wheelReinfBeamSpringExpansion":21000,"wheelReinfBeamDampExpansion":50},
 		{"wheelTreadBeamSpring":301000,"wheelTreadBeamDamp":40},
 		{"wheelTreadBeamSpringExpansion":301000,"wheelTreadBeamDampExpansion":40},

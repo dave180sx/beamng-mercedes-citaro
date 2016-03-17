@@ -235,23 +235,23 @@
 		
 		// Link sur le frame
 		{"beamSpring":25000000,"beamDamp":1000},
-        {"beamDeform":80000,"beamStrength":800000},
+        {"beamDeform":800000,"beamStrength":8000000},
 		["ar7","nl336"],
 		["ar7","nr339"],
 		["ar19","nr340"],
 		["ar15","nl335"],
 		// Front progressive springs
-		{"beamPrecompression":1.2, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
+		{"beamPrecompression":1.15, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
 		{"beamDeform":200500,"beamStrength":250500},
-		{"beamSpring":80000,"beamDamp":0},
+		{"beamSpring":150000,"beamDamp":0},
 		{"beamLimitSpring":351000,"beamLimitDamp":0},
 		["ar32","nr375"],
 		["ar1","nr331"],
 		["ar31","nl374"],
 		["ar0","nl330"],
 		// Dampers
-		{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1.0, "beamShortBound":1.0},
-		{"beamSpring":0,"beamDamp":6000},
+		{"beamPrecompression":1.15, "beamType":"|BOUNDED", "beamLongBound":1.0, "beamShortBound":1.0},
+		{"beamSpring":0,"beamDamp":4000},
 		{"beamLimitSpring":0,"beamLimitDamp":0},
 		["ar32","nr375",{"beamDampRebound":10300}],
 		["ar1","nr331",{"beamDampRebound":10300}],
@@ -310,7 +310,7 @@
 		{"wheelSideBeamSpringExpansion":121000,"wheelSideBeamDampExpansion":20},
 		{"wheelSideReinfBeamSpring":0,"wheelSideReinfBeamDamp":15},
 		{"wheelSideReinfBeamSpringExpansion":391000,"wheelSideReinfBeamDampExpansion":20},
-		{"wheelReinfBeamSpring":21000,"wheelReinfBeamDamp":50},
+		{"wheelReinfBeamSpring":100000,"wheelReinfBeamDamp":50},//{"wheelReinfBeamSpring":21000,"wheelReinfBeamDamp":50},
 		{"wheelReinfBeamSpringExpansion":21000,"wheelReinfBeamDampExpansion":50},
 		{"wheelTreadBeamSpring":301000,"wheelTreadBeamDamp":40},
 		{"wheelTreadBeamSpringExpansion":301000,"wheelTreadBeamDampExpansion":40},
@@ -324,12 +324,13 @@
 		{"wheelPeripheryBeamDeform":78000,"wheelPeripheryBeamStrength":95000},
 		
 		// General tire values
-		{"nodeWeight":0.45},
-		{"nodeMaterial":"|NM_RUBBER"},
-		{"frictionCoef":1.22},
-		{"pressurePSI":75},
-		{"maxPressurePSI":2000},
-		{"dragCoef":20},
+		{"nodeWeight":1.63},
+            {"nodeMaterial":"|NM_RUBBER"},
+            {"frictionCoef":1.22},
+            {"triangleCollision":true},
+            {"pressurePSI":75},
+            {"maxPressurePSI":240},
+            {"dragCoef":20},
 		
 		// Rear
 		{"selfCollision":false},
