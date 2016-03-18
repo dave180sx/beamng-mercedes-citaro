@@ -8,7 +8,7 @@
 	"slots": [
         ["type", "default", "description"]
         ["citaro_engine", "citaro_I6_9L", "Engine",{"nodeOffset":""}],
-        ["citaro_transmission", "citaro_transmission_ecolife", "Transmission",{"nodeOffset":""}],
+        ["citaro_transmission", "citaro_transmission_ecolife_volvo", "Transmission",{"nodeOffset":""}],
 	],
 },
 
@@ -83,7 +83,7 @@
 	},
 },
 
-"citaro_transmission_ecolife for Volvo": {
+"citaro_transmission_ecolife_volvo": {
     "information":{
         "authors":"dave180sx, johnville",
         "name":"Ecolife 6-Speed Automatic Transmission for volvo",
@@ -109,7 +109,7 @@
         },
 },
 
-"citaro_transmission_ecolife for cummins": {
+"citaro_transmission_ecolife_cummins": {
     "information":{
         "authors":"dave180sx, johnville",
         "name":"Ecolife 6-Speed Automatic Transmission for Cummins",
