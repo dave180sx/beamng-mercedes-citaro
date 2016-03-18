@@ -12,26 +12,27 @@
 	],
 },
 
-"citaro_I6_9L": {
+"citaro_I6_8.9L": {
     "information":{
         "authors":"dave180sx, johnville",
-        "name":"9.0L Inline 6 Diesel Engine",
+        "name":"Cummins 8.9 280CV 900",
     }
     "slotType" : "citaro_engine",
-	
+			
+		//Cummins 8.9 280hp/900lbft
 	"enginetorque":[
         ["rpm", "torque"] //Torque curve
         [0, 0],
         [250, 600],
 		[500, 900],
-        [1000, 1090],
-        [1200, 1300],
-        [1400, 1350],
-        [1600, 1300],
-        [1800, 1200],
-        [2000, 1090],
-        [2200, 1010],
-        [2400, 900],
+        [1000, 1000],
+        [1200, 1200],
+        [1400, 1220],
+        [1600, 1200],
+        [1800, 1100],
+        [2000, 1000],
+        [2200, 900],
+        [2400, 800],
     ],
 	
 	"engine":{
@@ -47,14 +48,50 @@
 	},
 },
 
-"citaro_transmission_ecolife": {
+"citaro_I6_9L": {
     "information":{
         "authors":"dave180sx, johnville",
-        "name":"Ecolife 6-Speed Automatic Transmission",
+        "name":"VOLVO D9-425",
+    }
+    "slotType" : "citaro_engine",
+	//D9-425
+	"enginetorque":[
+        ["rpm", "torque"] //Torque curve
+        [0, 0],
+        [250, 600],
+		[500, 900],
+        [1000, 1350],
+        [1200, 1575],
+        [1400, 1650],
+        [1600, 1650],
+        [1800, 1650],
+        [2000, 1500],
+        [2200, 1350],
+        [2400, 1150],
+	],
+	
+	"engine":{
+        "idleRPM":700, //Idling RPM
+        "shiftDownRPM":1200, //Down shift, for automatic
+        "shiftUpRPM":2300, //Up shift, for automatic
+        "maxRPM":2800, //Max RPM for the engine, basically a redline. 
+        "inertia":4,
+        "friction":1
+        "brakingCoefRPS":12
+        "burnEfficiency":0.8
+        "throttleSensitivity":1.0
+	},
+},
+
+"citaro_transmission_ecolife for Volvo": {
+    "information":{
+        "authors":"dave180sx, johnville",
+        "name":"Ecolife 6-Speed Automatic Transmission for volvo",
     }
     "slotType" : "citaro_transmission",
 	
-	"engine":{        
+		
+		"engine":{     //for Cummins 8.9   
         "transmissionType":"automatic", //Automatic or manual, setting automatic will restrict the use of manual mode while playing.
 		"lowShiftDownRPM":700,
         "lowShiftUpRPM":1100,
@@ -71,4 +108,30 @@
         "enableLocking":true
         },
 },
+
+"citaro_transmission_ecolife for cummins": {
+    "information":{
+        "authors":"dave180sx, johnville",
+        "name":"Ecolife 6-Speed Automatic Transmission for Cummins",
+    }
+    "slotType" : "citaro_transmission",
+		
+		"engine":{     //for Cummins 8.9   
+        "transmissionType":"automatic", //Automatic or manual, setting automatic will restrict the use of manual mode while playing.
+		"lowShiftDownRPM":700,
+        "lowShiftUpRPM":1100,
+        "highShiftDownRPM":1200,
+        "highShiftUpRPM":1950,
+
+        // -1, 0 (neutral), 1, etc
+		//"gears":[-3.05, 0, 3.49, 1.86, 1.41, 1, 0.75, 0.65] //Gear ratios Allison B400R
+		"gears":[-3.05, 0, 3.36, 1.91, 1.42, 1, 0.72, 0.62] //Gear ratios ZF ECOLIFE
+        "clutchDuration":0.5
+        "viscousCoupling":25.5
+		"differential":5.12
+        "lockingTorqueLimit":2000
+        "enableLocking":true
+        },
+},
+
 }
