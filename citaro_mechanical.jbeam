@@ -15,7 +15,7 @@
 "citaro_I6_8.9L": {
     "information":{
         "authors":"dave180sx, johnville",
-        "name":"Cummins 8.9 280CV 900",
+        "name":"Cummins_8.9_280CV_900",
     }
     "slotType" : "citaro_engine",
 			
@@ -51,7 +51,7 @@
 "citaro_I6_9L": {
     "information":{
         "authors":"dave180sx, johnville",
-        "name":"VOLVO D9-425",
+        "name":"VOLVO_D9-425",
     }
     "slotType" : "citaro_engine",
 	//D9-425
@@ -95,7 +95,7 @@
         "transmissionType":"automatic", //Automatic or manual, setting automatic will restrict the use of manual mode while playing.
 		"lowShiftDownRPM":700,
         "lowShiftUpRPM":1100,
-        "highShiftDownRPM":1200,
+        "highShiftDownRPM":1350,
         "highShiftUpRPM":2100,
 
         // -1, 0 (neutral), 1, etc
@@ -117,20 +117,23 @@
     "slotType" : "citaro_transmission",
 		
 		"engine":{     //for Cummins 8.9   
-        "transmissionType":"automatic", //Automatic or manual, setting automatic will restrict the use of manual mode while playing.
+        "transmissionType":"manual", //Automatic or manual, setting automatic will restrict the use of manual mode while playing.
+		"dct":true
 		"lowShiftDownRPM":700,
-        "lowShiftUpRPM":1100,
-        "highShiftDownRPM":1200,
+        "lowShiftUpRPM":1200,
+        "highShiftDownRPM":1350,
         "highShiftUpRPM":1950,
 
         // -1, 0 (neutral), 1, etc
 		//"gears":[-3.05, 0, 3.49, 1.86, 1.41, 1, 0.75, 0.65] //Gear ratios Allison B400R
 		"gears":[-3.05, 0, 3.36, 1.91, 1.42, 1, 0.72, 0.62] //Gear ratios ZF ECOLIFE
-        "clutchDuration":0.5
-        "viscousCoupling":25.5
+        "clutchDuration":0.05
+        "viscousCoupling":20.5
 		"differential":5.12
-        "lockingTorqueLimit":2000
-        "enableLocking":true
+		"clutchTorque":1400
+        "autoGearChangeDelay": 0.1
+        //"lockingTorqueLimit":2000
+        //"enableLocking":true
         },
 },
 
