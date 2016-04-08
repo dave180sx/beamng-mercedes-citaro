@@ -70,7 +70,7 @@
 	"beams": [   
         ["id1:", "id2:"], 
         {"beamSpring":12000000,"beamDamp":500},
-        {"beamDeform":800000,"beamStrength":"FLT_MAX"},
+        {"beamDeform":8000000,"beamStrength":"FLT_MAX"},
 		["af22","af31"],
 		["af17","af31"],
 		["af17","af6"],
@@ -181,7 +181,7 @@
 		["af22","af29"],
 		
 		// Left knuckle
-		{"beamSpring":20000000,"beamDamp":500},
+		{"beamSpring":20000000,"beamDamp":1000},
         {"beamDeform":8000000,"beamStrength":"FLT_MAX"},
 		["af0","af8"],
 		["af0","af9"],
@@ -226,8 +226,8 @@
 		["af33","af32"],
 		
 		// Link sur le frame
-		{"beamSpring":25000000,"beamDamp":1000},
-        {"beamDeform":800000,"beamStrength":800000},
+		{"beamSpring":35000000,"beamDamp":2000},
+        {"beamDeform":8000000,"beamStrength":8000000},
 		["af17","nr144"],
 		["af16","nl141"],
 		["af7","nl139"],
@@ -241,7 +241,7 @@
 		["af30","af32",{"beamDampRebound":12000}],
 		
 		// Front progressive springs
-		{"beamPrecompression":1.15, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
+		{"beamPrecompression":1.1, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
 		{"beamDeform":200500,"beamStrength":250500},
 		{"beamSpring":120000,"beamDamp":0},
 		{"beamLimitSpring":300000,"beamLimitDamp":0},
@@ -250,10 +250,10 @@
 		
 		// Dampers
 		{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1.0, "beamShortBound":1.0},
-		{"beamSpring":0,"beamDamp":10000},
+		{"beamSpring":0,"beamDamp":9500},
 		{"beamLimitSpring":0,"beamLimitDamp":0},
-		["af18","nr159",{"beamDampRebound":15300}],
-		["af15","nl156",{"beamDampRebound":15300}],
+		["af18","nr159",{"beamDampRebound":9500}],
+		["af15","nl156",{"beamDampRebound":9500}],
 		
 		// Bump stops
 		{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
@@ -267,7 +267,7 @@
 	"hydros": [
         ["id1:","id2:"],
 		{"beamSpring":1000000,"beamDamp":1000},
-		["af14","nl550",{"factor":0.45,"steeringWheelLock":1000,"lockDegrees":25}],	
+		["af14","nl550",{"factor":0.48,"steeringWheelLock":1000,"lockDegrees":25}],	
 		
     ]
 },
@@ -309,7 +309,7 @@
 		{"wheelSideBeamSpringExpansion":121000,"wheelSideBeamDampExpansion":20},
 		{"wheelSideReinfBeamSpring":0,"wheelSideReinfBeamDamp":15},
 		{"wheelSideReinfBeamSpringExpansion":391000,"wheelSideReinfBeamDampExpansion":20},
-		{"wheelReinfBeamSpring":50000,"wheelReinfBeamDamp":50},//{"wheelReinfBeamSpring":21000,"wheelReinfBeamDamp":50},
+		{"wheelReinfBeamSpring":100000,"wheelReinfBeamDamp":250},//{"wheelReinfBeamSpring":75000,"wheelReinfBeamDamp":50},
 		{"wheelReinfBeamSpringExpansion":21000,"wheelReinfBeamDampExpansion":50},
 		{"wheelTreadBeamSpring":301000,"wheelTreadBeamDamp":40},
 		{"wheelTreadBeamSpringExpansion":301000,"wheelTreadBeamDampExpansion":40},
