@@ -250,10 +250,20 @@
 		
 		// Dampers
 		{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1.0, "beamShortBound":1.0},
-		{"beamSpring":0,"beamDamp":9500},
+		{"beamSpring":0,"beamDamp":12500},
 		{"beamLimitSpring":0,"beamLimitDamp":0},
-		["af18","nr159",{"beamDampRebound":9500}],
-		["af15","nl156",{"beamDampRebound":9500}],
+		["af18","nr159",{"beamDampRebound":12500}],
+		["af15","nl156",{"beamDampRebound":12500}],
+		//axle damper
+		["af9","nl192",{"beamDampRebound":12500}],
+		["af11","nl193",{"beamDampRebound":12500}],
+		["af24","nr197",{"beamDampRebound":12500}],
+		["af22","nr196",{"beamDampRebound":12500}],
+		
+		//["af26","nl192",{"beamDampRebound":12500}],
+		//["af27","nl193",{"beamDampRebound":12500}],
+		//["af30","nr197",{"beamDampRebound":12500}],
+		//["af31","nr196",{"beamDampRebound":12500}],
 		
 		// Bump stops
 		{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
@@ -267,7 +277,7 @@
 	"hydros": [
         ["id1:","id2:"],
 		{"beamSpring":1000000,"beamDamp":1000},
-		["af14","nl550",{"factor":0.48,"steeringWheelLock":1000,"lockDegrees":25}],	
+		["af14","nl550",{"factor":0.48,"steeringWheelLock":600,"lockDegrees":25}],	
 		
     ]
 },

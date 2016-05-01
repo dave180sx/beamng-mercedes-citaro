@@ -251,12 +251,18 @@
 		["ar0","nl330"],
 		// Dampers
 		{"beamPrecompression":1.15, "beamType":"|BOUNDED", "beamLongBound":1.0, "beamShortBound":1.0},
-		{"beamSpring":0,"beamDamp":9500},
+		{"beamSpring":0,"beamDamp":12500},
 		{"beamLimitSpring":0,"beamLimitDamp":0},
-		["ar32","nr375",{"beamDampRebound":9500}],
-		["ar1","nr331",{"beamDampRebound":9500}],
-		["ar31","nl374",{"beamDampRebound":9500}],
-		["ar0","nl330",{"beamDampRebound":9500}],
+		["ar32","nr375",{"beamDampRebound":12500}],
+		["ar1","nr331",{"beamDampRebound":12500}],
+		["ar31","nl374",{"beamDampRebound":12500}],
+		["ar0","nl330",{"beamDampRebound":12500}],
+		//axle damper
+		["ar12","nl326",{"beamDampRebound":12500}],
+		["ar16","nr328",{"beamDampRebound":12500}],
+		["ar15","nl327",{"beamDampRebound":12500}],
+		["ar19","nr329",{"beamDampRebound":12500}],
+		
 		// Bump stops
 		//{"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.12},
 		//{"beamSpring":0,"beamDamp":0},
